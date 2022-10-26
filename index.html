@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Envio de Emails</title>
-    <link rel="stylesheet" href="dist/app.css">
     <link rel="stylesheet" href="dist/spinner.css">
+    <link rel="stylesheet" href="dist/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 </head>
-<body class="min-h-screen bg-slate-300">
+<body class="min-h-screen overflow-hidden dark:bg-slate-800 ">
     <div class="max-w-3xl mx-auto p-10">
-        <h1 class="text-4xl text-gray-700 pt-32">Enviar mails</h1>
         <div class="bg-white rounded-lg shadow-xl p-10 mt-5">
+            <h1 class="text-4xl text-indigo-700 pt-2 text-center font-bold">Enviar mails</h1>
             <form id="formulario" class="space-y-3">
                 <div class="flex flex-col space-y-2">
                     <label for="email" class="font-regular font-medium">Para:</label>
@@ -35,7 +38,7 @@
                 <div id="botones" class="flex gap-5">
                     <button
                         type="submit"
-                        class="flex-1 bg-pink-600 text-white flex justify-center gap-2 items-center p-3 opacity-50"
+                        class="flex-1 bg-green-700 text-white flex justify-center gap-2 items-center p-3 opacity-50"
                         disabled
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -45,7 +48,7 @@
                     </button>
 
                     <button
-                        class="flex-1 bg-gray-800 text-white flex justify-center gap-2 items-center p-3"
+                        class="flex-1 bg-red-700 text-white flex justify-center gap-2 items-center p-3"
                         type="reset"
                     >
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -71,5 +74,6 @@
 
 
     <script src="js/app.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 </body>
 </html>
